@@ -24,8 +24,8 @@
                 &kp Z    &kp X    &kp C        &kp V      &kp B                   
                 &kp N                &kp M    &kp COMMA    &kp DOT    &kp SLASH
                 
-                &kp A          &kp B     &mt LEFT_CONTROL TAB    
-                &kp LEFT_SHIFT    &kp SPACE    &mt LEFT_CONTROL RET
+                &kp A          &kp B     &kp TAB    
+                &kp LEFT_SHIFT    &kp SPACE    &kp RET
 
             >;
         };
