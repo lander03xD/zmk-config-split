@@ -36,7 +36,7 @@
                 &ht_tp LEFT_GUI Z    &kp X    &kp C        &kp V      &kp B                   
                 &kp N                &kp M    &kp COMMA    &kp DOT    &ht_tp LEFT_ALT SLASH
                 
-                &mo NAVI          &mo SYMB     &mt LEFT_CONTROL TAB    
+                &kp A          &kp B     &mt LEFT_CONTROL TAB    
                 &kp LEFT_SHIFT    &kp SPACE    &mt LEFT_CONTROL RET
 
             >;
