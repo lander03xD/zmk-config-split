@@ -12,18 +12,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-	
-        behaviors {
-            ht_tp: holdtap_tappref {
-                compatible = "zmk,behavior-hold-tap";
-                label = "HOLDTAP_TAPPREF";
-                #binding-cells = <2>;
-                tapping-term-ms = <300>;
-                quick-tap-ms = <0>;
-                flavor = "tap-preferred";
-                bindings = <&kp>, <&kp>;
-            };
-        };
 
         default_layer { // Layer 0
             bindings = <
@@ -33,8 +21,8 @@
                 &kp A    &kp S   &kp D   &kp F   &kp G                   
                 &kp H    &kp J   &kp K   &kp L   &kp SEMICOLON
                 
-                &ht_tp LEFT_GUI Z    &kp X    &kp C        &kp V      &kp B                   
-                &kp N                &kp M    &kp COMMA    &kp DOT    &ht_tp LEFT_ALT SLASH
+                &kp Z    &kp X    &kp C        &kp V      &kp B                   
+                &kp N                &kp M    &kp COMMA    &kp DOT    &kp SLASH
                 
                 &kp A          &kp B     &mt LEFT_CONTROL TAB    
                 &kp LEFT_SHIFT    &kp SPACE    &mt LEFT_CONTROL RET
