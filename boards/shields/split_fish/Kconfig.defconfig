@@ -1,0 +1,17 @@
+if SHIELD_SPLIT_FISH_LEFT
+
+# Name must be less than 16 characters long!
+config ZMK_SPLIT_FISH
+    default "SplitFish"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_SPLIT_FISH_LEFT || SHIELD_SPLIT_FISH_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
