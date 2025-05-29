@@ -21,7 +21,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = < &kp A    &kp S   &kp D   &kp F >;
+            hold-trigger-key-positions = < A S D F >;
             hold-trigger-on-release;
         };
         hmr: home_row_mod_right {
@@ -32,7 +32,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = < &kp J   &kp K   &kp L   &kp SEMICOLON >;
+            hold-trigger-key-positions = < J K L SEMICOLON >;
             hold-trigger-on-release;
         };
     };
