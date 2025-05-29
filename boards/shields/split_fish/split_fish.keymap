@@ -19,8 +19,8 @@
                 &kp Z    &kp X    &kp C        &kp V      &kp B                   
                 &kp N                &kp M    &kp COMMA    &kp DOT    &kp SLASH
                 
-                &kp A    &kp B     &kp C    
-                &kp D    &kp E     &kp F
+                &kp A    &kp B     &bootloader    
+                &bootloader    &kp E     &kp F
 
             >;
         };
