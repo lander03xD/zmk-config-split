@@ -52,8 +52,8 @@
                 &kp Z    &kp X    &kp C        &kp V      &kp B                   
                 &kp N    &kp M    &kp COMMA    &kp DOT    &kp SLASH
                 
-                &mo NAVI    &mo SYMB      &none    
-                &none       &kp SPACE     &kp RET
+                &mo NAVI     &mo SYMB      &kp TAB    
+                &kp LSHFT    &kp SPACE     &kp RET
 
             >;
         };
