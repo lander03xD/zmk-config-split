@@ -10,20 +10,19 @@
 #define CONF 3
 
 
-/ {
+/ {  
+    combos {
+        compatible = "zmk,combos";
+        
+        combo_activate_layer_3 {
+            timeout-ms = <50>;
+            key-positions = <30 32>;
+            bindings = <&mo CONF>;
+        };
+    };
     
     behaviors {
-        hml: home_row_mod_left {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            require-prior-idle-ms = <125>;
-            tapping-term-ms = <220>;
-            quick-tap-ms = <175>;
-            bindings = <&kp>, <&kp>;
-            hold-trigger-on-release;
-        };
-        hmr: home_row_mod_right {
+        mt: mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
@@ -45,14 +44,14 @@
                 &kp Q    &kp W    &kp E    &kp R    &kp T                   
                 &kp Y    &kp U    &kp I    &kp O    &kp P
                 
-                &hml LGUI A    &hml LALT S    &hml LCTRL D    &hml LSHFT F    &kp G                   
-                &kp H    &hmr LSHFT J    &hmr LCTRL K    &hmr LALT L    &hmr LGUI SEMICOLON
+                &mt LGUI A    &mt LALT S    &mt LCTRL D    &mt LSHFT F    &kp G                   
+                &kp H    &mt LSHFT J    &mt LCTRL K    &mt LALT L    &mt LGUI SEMICOLON
                 
                 &kp Z    &kp X    &kp C        &kp V      &kp B                   
                 &kp N    &kp M    &kp COMMA    &kp DOT    &kp SLASH
                 
                 &mo NAVI         &mo SYMB      &kp TAB    
-                &kp BACKSPACE    &kp SPACE     &kp RET
+                &kp LSHFT    &kp SPACE     &kp RET
 
             >;
         };
@@ -86,7 +85,7 @@
                 &kp F1    &kp F2    &kp F3    &kp F4    &kp F5
                 &kp F6    &kp F7    &kp F8    &kp F9    &kp F10
 
-                &none     &none         &to CONF
+                &none     &none         &none
                 &trans    &kp DELETE    &trans
             >;
         };
@@ -104,8 +103,8 @@
                 &bt BT_CLR    &none    &none    &none    &bt BT_SEL 3       
                 &none         &none    &none    &none    &none   
 
-                &to BASE   &to BASE    &to BASE                      
-                &to BASE   &to BASE    &to BASE      
+                &none   &none    &none 
+                &none   &none    &none               
             >;
         }; 
         
