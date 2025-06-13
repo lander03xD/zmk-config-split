@@ -1,4 +1,4 @@
-#include <dt-bindings/zmk/matrix_transform.h> // Put this with the other includes at the top of your dtsi
+#include <dt-bindings/zmk/matrix_transform.h> 
 #include <physical_layouts.dtsi>
 
 / {
@@ -8,10 +8,7 @@
         wakeup-source;
 
     };
-};
-
-
-/ {
+    
     default_transform: keymap_transform0 {
         compatible = "zmk,matrix-transform";
         columns = <10>;
@@ -23,9 +20,7 @@
                             RC(3,2) RC(3,3) RC(3,4)     RC(3,5) RC(3,6) RC(3,7)
         >;
     };
-};
-
-/ {
+    
     physical_layout0: physical_layout_0 { // First physical layout, use different naming for other layouts
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
@@ -70,9 +65,7 @@
             , <&key_physical_attrs 100 100   900  325       0     0     0>
             ;
     };
-};
-
-/ {
+    
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &physical_layout0;
