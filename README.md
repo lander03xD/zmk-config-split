@@ -12,7 +12,6 @@ There are by default 4 layers and 2 extra's if you want to add more in zmk studi
 
 ## BASE
 
-| C1 | C2 | C3 | C4 | C5 | C6 |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | Q | W | E | R | T |  |
 | hold super, tap A | hold alt, tap S | hold ctrl, tap D | hold shift, tap F | G |  | 
