@@ -14,7 +14,7 @@ There are by default 4 layers and 2 extra's if you want to add more in zmk studi
 * navigation
 * config
 
-Documentation pdf can be found in the docs folder: [keymap_explained.pdf](https://www.github.com/lander03xD/zmk-config-split/docs/keymaps_explained.pdf).
+Documentation pdf can be found in the docs folder: [keymap_explained.pdf](https://github.com/lander03xD/zmk-config-split/blob/main/docs/keymap_explained.pdf).
 
 # Building the keyboard
 
