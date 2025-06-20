@@ -14,20 +14,7 @@ There are by default 4 layers and 2 extra's if you want to add more in zmk studi
 * navigation
 * config
 
-## BASE
-
-| C1 | C2 | C3 | C4 | C5 | C6 |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| Q | W | E | R | T |  |
-| hold super, tap A | hold alt, tap S | hold ctrl, tap D | hold shift, tap F | G |  | 
-| Z | X | C | V | B |  |
-|   |   |   | momenary navigation layer | momentary symbols layer | tab |
-
-## SYMBOLS
-
-## NAVIGATION
-
-## CONFIG
+Documentation pdf can be found in the docs folder: [keymap_explained.pdf](https://www.github.com/lander03xD/zmk-config-split/docs/keymaps_explained.pdf).
 
 # Building the keyboard
 
