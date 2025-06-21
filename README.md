@@ -71,7 +71,19 @@ Order of doing things:
 * **DISAPPOINT**
 * put on your filthy printed keycaps
 * make my desappointed 
+* **CASE**
+* Print the case
+* Put in the threaded inserts: 
+* Clean up the holes in the printed case. 
+* Put the threaded inserts in from the outside of the board (from the top for the plate, and the bottom for the case)
+* Get your soldering iron and set it to 150-160C (should be enough to make pla moldable)
+* push in the threaded insert with the soldering iron and press it flat with something else so it's very straight.
+* **SCREWS AND STANDOFFS**
+* Near the microcontroller there are 2 holes. Push some short screws in there and tighten a spacer on top.
+* Put the acrylic cover on top and tighten with the other short screws.
+* The long screws go through the threaded inserts all the way through the threaded inserts in the case. Press the keyboard down properly while screwing in the big boys. 
 
-TODO: - write down where to put the screws, threaded inserts, standoffs, 
+* **DONE**
+ 
 
 
