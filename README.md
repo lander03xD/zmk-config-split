@@ -16,6 +16,13 @@ There are by default 4 layers and 2 extra's if you want to add more in zmk studi
 
 Documentation pdf can be found in the docs folder: [keymap_explained.pdf](https://github.com/lander03xD/zmk-config-split/blob/main/docs/keymap_explained.pdf).
 
+
+![Split keyboard](./github-images/SplitKeyboard_Lander03xD_01.png)
+![Split keyboard](./github-images/SplitKeyboard_Lander03xD_02.png)
+![Split keyboard](./github-images/SplitKeyboard_Lander03xD_03.png)
+![Split keyboard](./github-images/SplitKeyboard_Lander03xD_04.png)
+![Split keyboard](./github-images/SplitKeyboard_Lander03xD_05.png)
+
 # Building the keyboard
 
 This section is just for you Glen! (do ask questions)
