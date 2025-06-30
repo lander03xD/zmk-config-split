@@ -112,6 +112,206 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Jumper:Jumper_3_Open"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at -2.54 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Jumper_3_Open"
+				(at 0 2.794 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Jumper, 3-pole, both open"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Jumper SPDT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Jumper* TestPoint*3Pads* TestPoint*Bridge*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Jumper_3_Open_0_0"
+				(circle
+					(center -3.302 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 3.302 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_3_Open_0_1"
+				(arc
+					(start -3.048 1.016)
+					(mid -1.651 1.4992)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.508) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.651 1.4992)
+					(end 3.048 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_3_Open_1_1"
+				(pin passive line
+					(at -6.35 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Mechanical:MountingHole"
 			(pin_names
 				(offset 1.016)
@@ -1450,16 +1650,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 38.1) (xy 74.93 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "132cc472-7f48-4a6b-b288-7817d50dfa0f")
-	)
-	(wire
-		(pts
 			(xy 157.48 88.9) (xy 170.18 88.9)
 		)
 		(stroke
@@ -1820,6 +2010,50 @@
 			)
 		)
 	)
+	(global_label "B_RIGHT"
+		(shape input)
+		(at 74.93 45.72 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1dcf5cca-04fd-4098-bf0d-c4b078b45af0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.5957 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "JMP_GND"
+		(shape input)
+		(at 30.48 29.21 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1e7299c1-9771-4e2d-a07b-b7f1369fe21e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 30.48 40.7223 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Row 2"
 		(shape input)
 		(at 177.8 88.9 0)
@@ -1930,6 +2164,28 @@
 			)
 		)
 	)
+	(global_label "B_RIGHT"
+		(shape input)
+		(at 66.04 21.59 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "46004c6f-603f-423f-bd1e-e758301a8301")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 76.7057 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Row 4"
 		(shape input)
 		(at 152.4 139.7 0)
@@ -1948,6 +2204,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "B_LEFT"
+		(shape input)
+		(at 44.45 45.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "55c48676-d7e8-43f8-9a07-e7816e19f92a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 34.9939 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -1996,6 +2274,116 @@
 			)
 		)
 	)
+	(global_label "JMP_GND"
+		(shape input)
+		(at 96.52 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "69619551-dffe-4268-8e25-52cfafef7ee5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 85.0077 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND_RIGHT"
+		(shape input)
+		(at 36.83 25.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6a8c22bc-646e-49e6-9e4d-a5a753a3c88a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 50.0962 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND_LEFT"
+		(shape input)
+		(at 44.45 48.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6f499f1e-8793-4671-9803-15261853d447")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 32.3934 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "JMP_B"
+		(shape input)
+		(at 59.69 25.4 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "84fa8e1b-349e-40e6-8c3e-947f5edc13ea")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 59.69 34.3118 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND_RIGHT"
+		(shape input)
+		(at 74.93 48.26 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8d1560f7-0279-4f15-b430-3452b7dca8b9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 88.1962 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Row 3"
 		(shape input)
 		(at 74.93 68.58 0)
@@ -2018,6 +2406,28 @@
 			)
 		)
 	)
+	(global_label "B_LEFT"
+		(shape input)
+		(at 53.34 21.59 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "99529e03-5072-46a3-b6c8-ca68cdaefed2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 43.8839 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Row 1"
 		(shape input)
 		(at 177.8 63.5 0)
@@ -2036,6 +2446,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND_LEFT"
+		(shape input)
+		(at 24.13 25.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "aca45c30-eb55-40d5-a825-070d863f51dd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 12.0734 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -2194,9 +2626,31 @@
 			)
 		)
 	)
+	(global_label "JMP_B"
+		(shape input)
+		(at 78.74 25.4 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f268fdcf-2908-44e5-96ed-11b25813f881")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 78.74 34.3118 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 85.09 35.56 270)
+		(at 88.9 22.86 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2205,7 +2659,7 @@
 		(fields_autoplaced yes)
 		(uuid "01ed3201-7dcd-4df2-853e-ec0f150d4e47")
 		(property "Reference" "B+1"
-			(at 90.17 34.2899 90)
+			(at 93.98 21.5899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2214,7 +2668,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 90.17 36.8299 90)
+			(at 93.98 24.1299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2222,8 +2676,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.1mm"
-			(at 85.09 40.64 0)
+		(property "Footprint" "ScottoKeebs_Scotto:TestPoint"
+			(at 88.9 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2232,7 +2686,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 85.09 40.64 0)
+			(at 88.9 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2241,7 +2695,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 85.09 35.56 0)
+			(at 88.9 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2551,7 +3005,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 74.93 48.26 270)
+		(at 96.52 55.88 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2560,7 +3014,7 @@
 		(fields_autoplaced yes)
 		(uuid "0a0c98de-1186-4cd9-bc2b-f05143fe6bb8")
 		(property "Reference" "GND1"
-			(at 80.01 46.9899 90)
+			(at 101.6 54.6099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2569,7 +3023,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 80.01 49.5299 90)
+			(at 101.6 57.1499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2577,8 +3031,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.1mm"
-			(at 74.93 53.34 0)
+		(property "Footprint" "ScottoKeebs_Scotto:TestPoint"
+			(at 96.52 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2587,7 +3041,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 74.93 53.34 0)
+			(at 96.52 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2596,7 +3050,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 74.93 48.26 0)
+			(at 96.52 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3197,6 +3651,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:Jumper_3_Open")
+		(at 59.69 21.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "4926529c-1c40-44e7-a7bf-d91ad2575168")
+		(property "Reference" "B+2"
+			(at 59.69 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Jumper_3_Open"
+			(at 59.69 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-0.25sqmm_1x03_P4.2mm_D0.65mm_OD1.7mm"
+			(at 59.69 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 59.69 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper, 3-pole, both open"
+			(at 59.69 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f1bfcf39-660b-4a00-99dc-f7a657812e99")
+		)
+		(pin "2"
+			(uuid "5a31bb8f-9e5e-4101-93bb-3efc69fcfea3")
+		)
+		(pin "3"
+			(uuid "ef5ec85f-1b99-4de4-95b2-58c21b1097b4")
+		)
+		(instances
+			(project ""
+				(path "/7e81bc44-1b0a-4e28-b31e-3c380521224d"
+					(reference "B+2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 154.94 78.74 0)
 		(unit 1)
@@ -3259,6 +3783,77 @@
 			(project "PCBstream"
 				(path "/7e81bc44-1b0a-4e28-b31e-3c380521224d"
 					(reference "S9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:Jumper_3_Open")
+		(at 30.48 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5d217dd4-6c30-477c-8047-1f7d9c8f21ee")
+		(property "Reference" "GND2"
+			(at 30.48 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Jumper_3_Open"
+			(at 30.48 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-0.25sqmm_1x03_P4.2mm_D0.65mm_OD1.7mm"
+			(at 30.48 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper, 3-pole, both open"
+			(at 30.48 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "c8870168-c8a9-4f0f-8adc-9be42a5bcde2")
+		)
+		(pin "1"
+			(uuid "4cc9cc55-2164-468f-bc5f-bb99dfe25f60")
+		)
+		(pin "2"
+			(uuid "7c0ce531-d3c9-436a-89b6-da838ada9a64")
+		)
+		(instances
+			(project ""
+				(path "/7e81bc44-1b0a-4e28-b31e-3c380521224d"
+					(reference "GND2")
 					(unit 1)
 				)
 			)
@@ -4653,7 +5248,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPDT_312")
-		(at 80.01 38.1 0)
+		(at 83.82 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4662,7 +5257,7 @@
 		(fields_autoplaced yes)
 		(uuid "bc15ceda-7837-49e7-bc87-1c1e2ae87b79")
 		(property "Reference" "SW2"
-			(at 80.01 29.21 0)
+			(at 83.82 16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4670,7 +5265,7 @@
 			)
 		)
 		(property "Value" "SW_SPDT_312"
-			(at 80.01 31.75 0)
+			(at 83.82 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4678,7 +5273,7 @@
 			)
 		)
 		(property "Footprint" "lander03xD:SW_Vertical_Slide_5mm"
-			(at 80.01 48.26 0)
+			(at 83.82 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4687,7 +5282,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 80.01 45.72 0)
+			(at 83.82 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4696,7 +5291,7 @@
 			)
 		)
 		(property "Description" "Switch, single pole double throw"
-			(at 80.01 38.1 0)
+			(at 83.82 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
