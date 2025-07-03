@@ -5,11 +5,21 @@ config ZMK_KEYBOARD_NAME
     default "SplitFish Glen"
 
 config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+    default n
 
 endif
 
+if SHIELD_SPLIT_FISH_RIGHT
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+    
+endif
+
 if SHIELD_SPLIT_FISH_LEFT || SHIELD_SPLIT_FISH_RIGHT
+
+config ZMK_BLE_EXPERIMENTAL_CONN
+    default y
 
 config ZMK_SPLIT
     default y
