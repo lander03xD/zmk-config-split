@@ -19,7 +19,7 @@ endif
 
 if SHIELD_SPLIT_FISH_LEFT || SHIELD_SPLIT_FISH_RIGHT
 
-config CONFIG_ZMK_BLE_CLEAR_BONDS_ON_START
+config ZMK_BLE_CLEAR_BONDS_ON_START
     default y
 
 config ZMK_BLE_EXPERIMENTAL_CONN
@@ -29,3 +29,4 @@ config ZMK_SPLIT
     default y
 
 endif
+	
