@@ -12,17 +12,33 @@ endif
 
 if SHIELD_SPLIT_FISH_LEFT || SHIELD_SPLIT_FISH_RIGHT
 
+config ZMK_SPLIT
+    default y
+    
+#sleep settings
 config ZMK_SLEEP
     default y
 
 config ZMK_IDLE_SLEEP_TIMEOUT
     default 120000
 
+#BLE settings
 config ZMK_BLE_EXPERIMENTAL_CONN
     default y
 
-config ZMK_SPLIT
-    default y
+    
+#zephyr ble settings
+config BT_PERIPHERAL_PREF_TIMEOUT
+    default 600
+    
+config BT_PERIPHERAL_PREF_MIN_INT
+    default 12
+    
+config BT_PERIPHERAL_PREF_MAX_INT
+    default 24
+    
+config BT_PERIPHERAL_PREF_LATENCY
+    default 30
 
 endif
 	
