@@ -2,7 +2,7 @@ if SHIELD_SPLIT_FISH_LEFT
 
 # Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
-    default "SplitFish Glen"
+    default "SplitFish"
 
 #currently central is the left side
 config ZMK_SPLIT_ROLE_CENTRAL
@@ -10,17 +10,13 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-#if SHIELD_SPLIT_FISH_RIGHT
-#
-#config ZMK_SPLIT_ROLE_CENTRAL
-#    default y
-#    
-#endif
-
 if SHIELD_SPLIT_FISH_LEFT || SHIELD_SPLIT_FISH_RIGHT
 
-config ZMK_BLE_CLEAR_BONDS_ON_START
+config ZMK_SLEEP
     default y
+
+config ZMK_IDLE_SLEEP_TIMEOUT
+    default 120000
 
 config ZMK_BLE_EXPERIMENTAL_CONN
     default y
