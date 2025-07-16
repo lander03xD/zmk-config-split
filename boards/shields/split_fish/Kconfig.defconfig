@@ -2,7 +2,7 @@ if SHIELD_SPLIT_FISH_LEFT
 
 # Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
-    default "SplitFish"
+    default "RainbowTrout"
 
 #currently central is the left side
 config ZMK_SPLIT_ROLE_CENTRAL
